@@ -1,0 +1,12 @@
+services:
+  mini-back:
+    environment:
+      - OBSERVE_APP_SECRET
+      - OBSERVE_APP_KEY
+    container_name: mini-back
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 3000:3000
