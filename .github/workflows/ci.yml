@@ -60,6 +60,6 @@ jobs:
         #   FRONTEND_URL: ${{ secrets.FRONTEND_URL }}
         #   DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: |
-          docker pull therealidc/miniback
+          docker pull therealidc/miniback:test
           docker compose -f docker-compose.prod.yaml up -d
           docker system prune --all --volumes --force
