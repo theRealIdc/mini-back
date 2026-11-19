@@ -1,5 +1,4 @@
 import { Injectable } from '@nestjs/common';
-import client from 'prom-client';
 
 @Injectable()
 export class AppService {
